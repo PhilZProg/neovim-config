@@ -1,5 +1,4 @@
 return {
-  'normen/vim-pio',
-  config = function ()
-  end
+	"normen/vim-pio",
+	config = function() end,
 }
