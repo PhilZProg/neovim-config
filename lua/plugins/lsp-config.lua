@@ -9,11 +9,14 @@ return {
 	{
 		"williamboman/mason-lspconfig.nvim",
 		event = "VeryLazy", -- load this after critical plugins
-		config = function()
-			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "clangd" },
-			})
-		end,
+		opts = {
+			auto_install = true,
+		},
+		-- config = function()
+		-- 	require("mason-lspconfig").setup({
+		-- 		ensure_installed = { "lua_ls", "clangd" },
+		-- 	})
+		-- end,
 	},
 	{
 		"neovim/nvim-lspconfig",
