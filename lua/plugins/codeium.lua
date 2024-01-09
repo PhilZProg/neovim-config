@@ -1,6 +1,6 @@
 return {
 	"Exafunction/codeium.vim",
-  event = { "BufReadPre", "BufNewFile" }, -- load when a buffer is opened or created
+  -- event = { "BufReadPre", "BufNewFile" }, -- load when a buffer is opened or created
 	config = function()
 		vim.keymap.set("i", "<A-g>", function()
 			return vim.fn["codeium#Accept"]()
