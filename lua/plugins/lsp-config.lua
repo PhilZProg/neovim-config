@@ -1,12 +1,14 @@
 return {
-  {
+	{
 		"williamboman/mason.nvim",
+		cmd = "Mason", -- load mason when running :Mason command
 		config = function()
 			require("mason").setup()
 		end,
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
+		event = "VeryLazy", -- load this after critical plugins
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = { "lua_ls", "clangd" },
@@ -15,6 +17,8 @@ return {
 	},
 	{
 		"neovim/nvim-lspconfig",
+		-- load lsp config when reading a buffer or creating a new one
+		event = { "BufReadPre", "BufNewFile" },
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lspconfig = require("lspconfig")
