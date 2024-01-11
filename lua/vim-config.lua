@@ -11,10 +11,25 @@ vim.keymap.set("n", "<c-j>", ":wincmd j<CR>")
 vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
 
-vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
-
+-- Hybrid line numbering
 vim.wo.number = true
-
 vim.wo.relativenumber = true
 
+-- Yank to clipboard
 vim.api.nvim_set_option("clipboard","unnamedplus")
+
+-- Terminal
+vim.keymap.set("n", "<Leader>tv", ":botright vnew <Bar> :terminal<cr>")
+vim.keymap.set("n", "<Leader>th", ":botright new <Bar> :terminal<cr>")
+
+-- General bindings
+vim.keymap.set("n", "<Leader>q", ":q!<cr>")
+vim.keymap.set("n", "<Leader>w", ":w<cr>")
+
+-- Move lines
+vim.keymap.set("v", "<A-up>", ":m '<-2<CR>gv=gv", {silent = true})
+vim.keymap.set("v", "<A-down>", ":m '>+1<CR>gv=gv", {silent = true})
+
+-- Split window
+vim.keymap.set("n", "ss", ":sp<CR>", { silent = true })
+vim.keymap.set("n", "sv", ":vsp<CR>", { silent = true })
