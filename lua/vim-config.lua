@@ -33,3 +33,10 @@ vim.keymap.set("v", "<A-down>", ":m '>+1<CR>gv=gv", {silent = true})
 -- Split window
 vim.keymap.set("n", "ss", ":sp<CR>", { silent = true })
 vim.keymap.set("n", "sv", ":vsp<CR>", { silent = true })
+-- Split resize
+vim.keymap.set("n", "<A-S-E>", "<c-W>=", {})
+vim.keymap.set("n", "<A-S-left>", "<c-W><3", {})
+vim.keymap.set("n", "<A-S-right>", "<c-W>>3", {})
+vim.keymap.set("n", "<A-S-up>", "<c-W>-", {})
+vim.keymap.set("n", "<A-S-down>", "<c-W>+", {})
+
