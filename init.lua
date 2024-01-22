@@ -20,11 +20,4 @@ vim.opt.rtp:prepend(lazypath)
 
 --Start lazy
 require("vim-config")
-require("lazy").setup({
-	spec = {
-		{ import = "plugins" }, -- loads all plugins in plugins/
-	},
-	defaults = {
-		lazy = false, -- plugins are not lazy loaded by default
-	},
-})
+require("lazy").setup("plugins")

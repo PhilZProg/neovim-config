@@ -1,6 +1,5 @@
 return {
   "nvimtools/none-ls.nvim",
-  event = { "BufReadPre", "BufNewFile" }, -- load the plugin when entering a buffer
   config = function()
     local null_ls = require("null-ls")
     null_ls.setup({

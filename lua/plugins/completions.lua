@@ -1,11 +1,9 @@
 return {
 	{
 		"hrsh7th/cmp-nvim-lsp",
-		lazy = true, -- we let nvim-cmp load this for us
 	},
 	{
 		"L3MON4D3/LuaSnip",
-    lazy = true, -- we let nvim-cmp load this too
 		dependencies = {
 			"saadparwaiz1/cmp_luasnip",
 			"rafamadriz/friendly-snippets",
