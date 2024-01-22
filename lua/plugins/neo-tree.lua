@@ -23,6 +23,5 @@ return {
     --Map Neo-tree
     vim.keymap.set("n", "<C-n>", ":Neotree filesystem toggle<CR>", {})
     vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
-    -- vim.keymap.set("n", "<C-s>", ":Neotree git_status<CR>", {})
   end,
 }
