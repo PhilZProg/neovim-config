@@ -28,7 +28,7 @@ return {
 			lspconfig.lua_ls.setup({ capabilities })
 			--Temporary disable clangd in favor of ccls for correct vim-pio
 			--plugin work
-			--lspconfig.clangd.setup({capabilities})
+			-- lspconfig.clangd.setup({ capabilities })
 			lspconfig.ccls.setup({ capabilities })
 			vim.keymap.set("n", "D", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
