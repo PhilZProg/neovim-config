@@ -23,7 +23,7 @@ vim.keymap.set("n", "<Leader>tv", ":botright vnew <Bar> :terminal<cr>")
 vim.keymap.set("n", "<Leader>th", ":botright new <Bar> :terminal<cr>")
 
 -- General bindings
-vim.keymap.set("n", "<Leader>q", ":q!<cr>")
+vim.keymap.set("n", "<Leader>q", ":q<cr>")
 vim.keymap.set("n", "<Leader>w", ":w<cr>")
 
 -- Move lines
