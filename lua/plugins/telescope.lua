@@ -8,12 +8,9 @@ return {
     tag = "0.1.5",
     dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
-      --Start telescope
       local builtin = require("telescope.builtin")
-      --Map telescope on ctrl+p
-      vim.keymap.set("n", "<C-p>", builtin.find_files, {})
-      --Map LiveGrep on space+f+g
-      vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
+      vim.keymap.set("n", "<C-p>", builtin.find_files, { desc = "Find Files" })
+      vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Live Grep" })
     end,
   },
   {

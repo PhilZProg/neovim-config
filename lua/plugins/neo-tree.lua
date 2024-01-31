@@ -21,7 +21,7 @@ return {
       },
     })
     --Map Neo-tree
-    vim.keymap.set("n", "<C-n>", ":Neotree filesystem toggle<CR>", {})
-    vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
+    vim.keymap.set("n", "<C-n>", ":Neotree filesystem toggle<CR>", { desc = "Toggle File Explorer" })
+    vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", { desc = "Show Floating Buffers" })
   end,
 }

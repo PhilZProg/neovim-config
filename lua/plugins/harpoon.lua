@@ -25,14 +25,14 @@ return {
 				width = vim.api.nvim_win_get_width(0) - 4,
 			},
 		})
-		vim.keymap.set("n", "<leader>hm", ":lua require('harpoon.mark').add_file()<CR>")
-		vim.keymap.set("n", "<leader>hh", ":lua require('harpoon.ui').toggle_quick_menu()<CR>")
-		vim.keymap.set("n", "1", ":lua require('harpoon.ui').nav_file(1)<CR>")
- 		vim.keymap.set("n", "2", ":lua require('harpoon.ui').nav_file(2)<CR>")
-		vim.keymap.set("n", "3", ":lua require('harpoon.ui').nav_file(3)<CR>")
-		vim.keymap.set("n", "4", ":lua require('harpoon.ui').nav_file(4)<CR>")
-    vim.keymap.set("n", "5", ":lua require('harpoon.ui').nav_file(5)<CR>")
-		vim.keymap.set("n", "<leader>hn", ":lua require('harpoon.ui').nav_next()<CR>")
-		vim.keymap.set("n", "<leader>hb", ":lua require('harpoon.ui').nav_prev()<CR>")
+		vim.keymap.set("n", "<leader>hm", ":lua require('harpoon.mark').add_file()<CR>", { desc = "Harpoon Mark File" })
+		vim.keymap.set("n", "<leader>hh", ":lua require('harpoon.ui').toggle_quick_menu()<CR>", { desc = "Harpoon Toggle Menu" })
+		vim.keymap.set("n", "<A-1>", ":lua require('harpoon.ui').nav_file(1)<CR>", { desc = "Harpoon Navigate File 1" })
+ 		vim.keymap.set("n", "<A-2>", ":lua require('harpoon.ui').nav_file(2)<CR>", { desc = "Harpoon Navigate File 2" })
+		vim.keymap.set("n", "<A-3>", ":lua require('harpoon.ui').nav_file(3)<CR>", { desc = "Harpoon Navigate File 3" })
+		vim.keymap.set("n", "<A-4>", ":lua require('harpoon.ui').nav_file(4)<CR>", { desc = "Harpoon Navigate File 4" })
+    vim.keymap.set("n", "<A-5>", ":lua require('harpoon.ui').nav_file(5)<CR>", { desc = "Harpoon Navigate File 5" })
+		vim.keymap.set("n", "<leader>hn", ":lua require('harpoon.ui').nav_next()<CR>", { desc = "Harpoon Navigate Next" })
+		vim.keymap.set("n", "<leader>hb", ":lua require('harpoon.ui').nav_prev()<CR>", { desc = "Harpoon Navigate Prev" })
 	end,
 }

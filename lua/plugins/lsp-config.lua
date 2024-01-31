@@ -30,10 +30,10 @@ return {
 			--plugin work
 			lspconfig.clangd.setup({ capabilities })
 			lspconfig.ccls.setup({ capabilities })
-			vim.keymap.set("n", "D", vim.lsp.buf.hover, {})
-			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
-			vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
-			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+			vim.keymap.set("n", "D", vim.lsp.buf.hover, { desc = "Show documentation" })
+			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+			vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, { desc = "Go to references" })
+			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
 		end,
 	},
 }
