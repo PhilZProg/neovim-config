@@ -1,0 +1,58 @@
+## CHEATSHEET
+Open cheatsheet | <leader>?
+Open cheatsheet in floating window | :CheatSheet!
+## CODEIUM
+Accept | <A-g>
+Next completion | <A-n>
+Previous completion | <A-b>
+Clear | <A-x>
+## COMPLETIONS
+Scroll back | <C-b>
+Scroll forward | <C-f>
+Complete | <C-Space>
+Abort | <C-e>
+Accept | <CR>
+## DEBUGGING
+Toggle breakpoint | <leader>db
+Continue | <leader>dc
+Step over | <F10>
+Step into | <F11>
+Step out | <F12>
+## GITSIGNS
+Preview hunk | <leader>gp
+Preview hunk inline | <leader>gpi
+Toggle current line blame | <leader>gt
+## HARPOON
+Mark file | <leader>hm
+Open menu | <leader>hh
+Navigate to file 1 | <A-1>
+Navigate to file 2 | <A-2>
+Navigate to file 3 | <A-3>
+Navigate to file 4 | <A-4>
+Navigate to file 5 | <A-5>
+Navigate next | <leader>hn
+Navigate previous | <leader>hb
+## LSP
+Show documentation | D
+Go to definition | <leader>gd
+Go to reference | <leader>gr
+Code action | <leader>ca
+## NEO-TREE
+Toggle filesystem | <C-n>
+Show floating buffers | <leader>bf
+## NONE-LS
+Format buffer | <leader>gf
+## COMMENT
+Comment/Uncomment (visual mode) | <leader>c
+Comment/Uncomment (normal mode) | <leader>c direction with arrows
+## TELESCOPE
+Find files | <C-p>
+Live grep | <leader>fg
+## TROUBLE
+Toggle trouble | <leader>xx
+Toggle workspace diagnostics | <leader>xw
+Toggle document diagnostics | <leader>xd
+Toggle quickfix list | <leader>xq
+Toggle location list | <leader>xl
+Toggle lsp references | gR
+
