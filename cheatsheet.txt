@@ -30,8 +30,8 @@ Navigate to file 2 | <A-2>
 Navigate to file 3 | <A-3>
 Navigate to file 4 | <A-4>
 Navigate to file 5 | <A-5>
-Navigate next | <leader>hn
-Navigate previous | <leader>hb
+Navigate next | <A-right>
+Navigate previous | <A-left>
 ## LSP
 Show documentation | D
 Go to definition | <leader>gd
